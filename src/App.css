@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+/* additionals */
+
+.mapboxgl-popup-content {
+    border-radius: 15px !important;
+}
+
+.mapboxgl-popup-close-button {
+    font-size: 200%;
+    opacity: 50%;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import MapGL, { Popup, Source, Layer, GeolocateControl } from 'react-map-gl';
+import './App.css';
 
 import ControlPanel from './control-panel.js';
 import {
@@ -9,7 +10,7 @@ import {
 	unclusteredPointLayer
 } from './layers';
 
-import CityInfo from './city-info';
+import CityInfo from './boulder-info';
 import BOULDERS from './boulders.json'
 import Pins from './pins';
 
@@ -72,7 +73,8 @@ export default class Map extends Component {
         return (
           popupInfo && (
             <Popup
-              tipSize={5}
+            style={{display: 'none !important'}}
+              tipSize={6}
               anchor="top"
               longitude={popupInfo.longitude}
               latitude={popupInfo.latitude}
@@ -117,23 +119,14 @@ export default class Map extends Component {
 				{...viewport}
 				width="100vw"
 				height="100vh"
-				mapStyle="mapbox://styles/mapbox/satellite-v9"
+				mapStyle="mapbox://styles/mapbox/satellite-v8"
 				onViewportChange={this._onViewportChange}
 				mapboxApiAccessToken={MAPBOX_TOKEN}
 				onClick={this.on_onClick}
 			>
                 <Pins data={BOULDERS} onClick={this._onClickMarker} />
                 {this._renderPopup()}
-				<Source id="my-data" type="geojson" data={geojson}>
-					<Layer
-						id="point"
-						type="circle"
-						paint={{
-							'circle-radius': 10,
-							'circle-color': '#007cbf'
-						}}
-					/>
-				</Source>
+
 				<GeolocateControl
 					positionOptions={{ enableHighAccuracy: false }}
 					trackUserLocation={true}
