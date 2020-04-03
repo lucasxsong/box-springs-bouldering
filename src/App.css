@@ -41,9 +41,16 @@
 
 .mapboxgl-popup-content {
     border-radius: 15px !important;
+    padding-top: 20px !important;
 }
 
 .mapboxgl-popup-close-button {
     font-size: 200%;
     opacity: 50%;
+}
+
+.boulder-modal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }

@@ -1,4 +1,4 @@
 [
-    {"boulder":"Speed Bump Boulder","population":"8,175,133","image":"http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg","area":"Crow's Nest Area","latitude":33.991351,"longitude":-117.306592},
-    {"boulder":"Big Bass Boulder","population":"8,175,133","image":"http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg","area":"Crow's Nest Area","latitude":33.991019,"longitude":-117.306679}
+    {"boulder":"Speed Bump Boulder","population":"8,175,133","image":"http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg","area":"Crow's Nest Area","latitude":33.991351,"longitude":-117.306592, "numClimbs": 4},
+    {"boulder":"Big Bass Boulder","population":"8,175,133","image":"http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg","area":"Crow's Nest Area","latitude":33.991019,"longitude":-117.306679, "numClimbs": 4}
 ]

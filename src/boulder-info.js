@@ -1,18 +1,42 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import { Card, Icon } from 'semantic-ui-react';
+import { Card, Icon, Image, Modal, Button, Header } from 'semantic-ui-react';
+import _ from 'lodash'
+import './App.css';
+import BoulderModal from './boulder-modal';
 
 export default class BoulderInfo extends PureComponent {
+	state = {
+		modalInfo: null
+	};
+
+	_openModal = () => {
+		console.log('clickced');
+		this.setState({ showModal: this.info });
+	};
+
+
 	render() {
 		const { info } = this.props;
 
 		return (
-			<Card
-				image={info.image}
-				header={info.boulder}
-				meta={info.area}
-				description="Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat."
-			/>
+			<>
+				<Card>
+					<Image
+						src="https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+						wrapped
+						ui={false}
+					/>
+					<Card.Content>
+						<Card.Header>{info.boulder}</Card.Header>
+						<Card.Meta>{info.area}</Card.Meta>
+						<Card.Description>
+                        {info.numClimbs} Climbs
+						</Card.Description>
+					</Card.Content>
+                    <BoulderModal info={info}/>
+				</Card>
+			</>
 		);
 	}
 }
