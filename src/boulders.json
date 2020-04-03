@@ -2,8 +2,8 @@
 	{
 		"boulder": "Speed Bump Boulder",
 		"population": "8,175,133",
-        "image": "/img/speedbump.jpg",
-        "desc": "The Speed Bump boulder is a little hard to find, requiring a scramble into a hidden nook. Landing is great, but slopes towards a small ledge.",
+        "image": "https://i.imgur.com/buO9eEI.jpg",
+        "desc": "The Speed Bump boulder is a little hard to find, requiring a scramble into a hidden nook. Landing slopes towards a small ledge.",
 		"area": "Crow's Nest Area",
 		"latitude": 33.991351,
 		"longitude": -117.306592,
@@ -31,7 +31,7 @@
 	{
 		"boulder": "Big Bass Boulder",
 		"population": "8,175,133",
-        "image": "/img/bigbass.jpg",
+        "image": "https://i.imgur.com/u00moQr.jpg",
         "desc": "The Big Bass Boulder is a large, red boulder directly on the ridgeline. It is a great spot to practice footwork, with good holds and sloping feet.",
 		"area": "Crow's Nest Area",
 		"latitude": 33.991019,

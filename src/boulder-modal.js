@@ -27,7 +27,7 @@ const BoulderModal = (props) => (
 								>
 									{props.info.boulder}
 								</Header>
-								<Image rounded size="boulder-image" src={`${process.env.PUBLIC_URL} ${props.info.image}`} />
+								<Image rounded size="boulder-image" src={props.info.image} />
 							</div>
 						</Sticky>
 					</Grid.Column>
