@@ -1,6 +1,19 @@
 import _ from 'lodash';
 import React from 'react';
-import { Button, Header, Icon, Image, Modal, Table , Label, Rating} from 'semantic-ui-react';
+import {
+	Button,
+	Header,
+	Icon,
+	Image,
+	Modal,
+	Table,
+	Label,
+	Rating
+} from 'semantic-ui-react';
+
+// this.labelColor = {};
+
+const colors = ['green', 'green', 'blue', 'blue', 'red', 'red', 'black', 'black;']
 
 const BoulderModal = props => (
 	<Modal closeIcon trigger={<Button>View Climbs</Button>}>
@@ -17,9 +30,19 @@ const BoulderModal = props => (
 					<Table.Body>
 						{props.info.climbs.map(climb => (
 							<Table.Row>
-                                <Table.Cell><Label ribbon>V{climb.grade}</Label></Table.Cell>
+								<Table.Cell>
+									<Label color={colors[climb.grade]} ribbon>
+										V{climb.grade}
+									</Label>
+								</Table.Cell>
 								<Table.Cell>{climb.name}</Table.Cell>
-								<Table.Cell><Rating icon='star' defaultRating={climb.stars} maxRating={4} /></Table.Cell>
+								<Table.Cell>
+									<Rating
+										icon="star"
+										defaultRating={climb.stars}
+										maxRating={4}
+									/>
+								</Table.Cell>
 							</Table.Row>
 						))}
 					</Table.Body>
