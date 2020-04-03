@@ -1,35 +1,48 @@
-import _ from 'lodash'
-import React from 'react'
-import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
+import _ from 'lodash';
+import React from 'react';
+import { Button, Header, Icon, Image, Modal, Table } from 'semantic-ui-react';
 
-const BoulderModal = (props) => (
-  <Modal trigger={<Button>View Boulder</Button>}>
-    <Modal.Header>{props.info.boulder}</Modal.Header>
-    <Modal.Content image scrolling>
-      <Image size='medium' src='https://react.semantic-ui.com/images/wireframe/image.png' wrapped />
+const BoulderModal = props => (
+	<Modal trigger={<Button>View Climbs</Button>}>
+		<Modal.Header>{props.info.boulder}</Modal.Header>
+		<Modal.Content image scrolling>
+			<Image
+				size="medium"
+				src="https://react.semantic-ui.com/images/wireframe/image.png"
+				wrapped
+			/>
 
-      <Modal.Description>
-        <Header>Modal Header</Header>
-        <p>
-          This is an example of expanded content that will cause the modal's
-          dimmer to scroll
-        </p>
+			<Modal.Description>
+				<Header>Modal Header</Header>
+				<Table celled>
+					<Table.Header>
+						<Table.Row>
+							<Table.HeaderCell>Climb</Table.HeaderCell>
+							<Table.HeaderCell>Rating</Table.HeaderCell>
+							<Table.HeaderCell>Grade</Table.HeaderCell>
+						</Table.Row>
+					</Table.Header>
+                    <Table.Body>
+					{/* {props.info.climbs.map((climb) => (
+                        <>
+						<Table.Cell>{climb.name}</Table.Cell>
+						<Table.Cell></Table.Cell>
+						<Table.Cell></Table.Cell>
+                        </>
 
-        {_.times(8, (i) => (
-          <Image
-            key={i}
-            src='https://react.semantic-ui.com/images/wireframe/paragraph.png'
-            style={{ paddingBottom: 5 }}
-          />
-        ))}
-      </Modal.Description>
-    </Modal.Content>
-    <Modal.Actions>
-      <Button primary>
-        Proceed <Icon name='chevron right' />
-      </Button>
-    </Modal.Actions>
-  </Modal>
-)
+					))} */}
+                    {props.info.climbs[0].name[0]}
 
-export default BoulderModal
+                    </Table.Body>
+				</Table>
+			</Modal.Description>
+		</Modal.Content>
+		<Modal.Actions>
+			<Button primary>
+				Proceed <Icon name="chevron right" />
+			</Button>
+		</Modal.Actions>
+	</Modal>
+);
+
+export default BoulderModal;
