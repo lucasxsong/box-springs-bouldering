@@ -20,9 +20,8 @@ export default class BoulderInfo extends PureComponent {
 			<>
 				<Card>
 					<Image
-						src={info.image}
-						wrapped
-						ui={false}
+                        src={info.image}
+                        className='boulder-image'
 					/>
 					<Card.Content>
 						<Card.Header>{info.boulder}</Card.Header>
