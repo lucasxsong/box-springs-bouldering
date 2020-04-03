@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import { Card, Icon, Image, Modal, Button, Header } from 'semantic-ui-react';
-import _ from 'lodash'
+import { Card, Image } from 'semantic-ui-react';
 import './App.css';
 import BoulderModal from './boulder-modal';
 
@@ -40,10 +39,3 @@ export default class BoulderInfo extends PureComponent {
 		);
 	}
 }
-
-const BoulderInfoWrapper = styled.div`
-	width: 40vw;
-	height: 40vh;
-`;
-
-const HeaderWrapper = styled.h2``;

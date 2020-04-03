@@ -1,30 +1,12 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import MapGL, { Popup, Source, Layer, GeolocateControl } from 'react-map-gl';
+import MapGL, { Popup, GeolocateControl } from 'react-map-gl';
 import './App.css';
-
-import ControlPanel from './control-panel.js';
-import {
-	clusterLayer,
-	clusterCountLayer,
-	unclusteredPointLayer
-} from './layers';
 
 import CityInfo from './boulder-info';
 import BOULDERS from './boulders.json'
 import Pins from './pins';
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_KEY; // Set your mapbox token here
-
-const geojson = {
-	type: 'FeatureCollection',
-	features: [
-		{
-			type: 'Feature',
-			geometry: { type: 'Point', coordinates: [33.991351, -117.306592] }
-		}
-	]
-};
 
 export default class Map extends Component {
 	state = {

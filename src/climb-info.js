@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Accordion, Icon, Table, Rating, Label, Header } from 'semantic-ui-react';
+import { Accordion, Table, Rating, Label, Header } from 'semantic-ui-react';
 
 const colors = [
     'green',
