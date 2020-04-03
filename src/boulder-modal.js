@@ -1,9 +1,9 @@
 import _ from 'lodash';
 import React from 'react';
-import { Button, Header, Icon, Image, Modal, Table } from 'semantic-ui-react';
+import { Button, Header, Icon, Image, Modal, Table , Label, Rating} from 'semantic-ui-react';
 
 const BoulderModal = props => (
-	<Modal trigger={<Button>View Climbs</Button>}>
+	<Modal closeIcon trigger={<Button>View Climbs</Button>}>
 		<Modal.Header>{props.info.boulder}</Modal.Header>
 		<Modal.Content image scrolling>
 			<Image
@@ -13,35 +13,19 @@ const BoulderModal = props => (
 			/>
 
 			<Modal.Description>
-				<Header>Modal Header</Header>
-				<Table celled>
-					<Table.Header>
-						<Table.Row>
-							<Table.HeaderCell>Climb</Table.HeaderCell>
-							<Table.HeaderCell>Rating</Table.HeaderCell>
-							<Table.HeaderCell>Grade</Table.HeaderCell>
-						</Table.Row>
-					</Table.Header>
-                    <Table.Body>
-					{/* {props.info.climbs.map((climb) => (
-                        <>
-						<Table.Cell>{climb.name}</Table.Cell>
-						<Table.Cell></Table.Cell>
-						<Table.Cell></Table.Cell>
-                        </>
-
-					))} */}
-                    {props.info.climbs[0].name[0]}
-
-                    </Table.Body>
+				<Table>
+					<Table.Body>
+						{props.info.climbs.map(climb => (
+							<Table.Row>
+                                <Table.Cell><Label ribbon>V{climb.grade}</Label></Table.Cell>
+								<Table.Cell>{climb.name}</Table.Cell>
+								<Table.Cell><Rating icon='star' defaultRating={climb.stars} maxRating={4} /></Table.Cell>
+							</Table.Row>
+						))}
+					</Table.Body>
 				</Table>
 			</Modal.Description>
 		</Modal.Content>
-		<Modal.Actions>
-			<Button primary>
-				Proceed <Icon name="chevron right" />
-			</Button>
-		</Modal.Actions>
 	</Modal>
 );
 
