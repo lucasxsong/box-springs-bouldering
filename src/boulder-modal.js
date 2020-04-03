@@ -8,14 +8,11 @@ import {
 	Modal,
 	Table,
 	Label,
-	Rating
+    Rating,
 } from 'semantic-ui-react';
+import ClimbInfo from './climb-info'
 
-// this.labelColor = {};
-
-const colors = ['green', 'green', 'blue', 'blue', 'red', 'red', 'brown', 'brown', 'black', 'black']
-
-const BoulderModal = props => (
+const BoulderModal = (props) => (
 	<Modal closeIcon trigger={<Button>View Climbs</Button>}>
 		<Modal.Header>{props.info.boulder}</Modal.Header>
 		<Modal.Content image scrolling>
@@ -28,22 +25,26 @@ const BoulderModal = props => (
 			<Modal.Description>
 				<Table>
 					<Table.Body>
-						{props.info.climbs.map(climb => (
-							<Table.Row>
-								<Table.Cell>
-									<Label color={colors[climb.grade]} ribbon>
-										V{climb.grade}
-									</Label>
-								</Table.Cell>
-								<Table.Cell>{climb.name}</Table.Cell>
-								<Table.Cell>
-									<Rating
-										icon="star"
-										defaultRating={climb.stars}
-										maxRating={4}
-									/>
-								</Table.Cell>
-							</Table.Row>
+						{props.info.climbs.map((climb) => (
+							// <Table.Row>
+							// 	<Table.Cell>
+							// 		<Label color={colors[climb.grade]} ribbon>
+							// 			<b>V{climb.grade}</b>
+							// 		</Label>
+							// 	</Table.Cell>
+                            //     <Table.Cell>
+							// 		<Rating
+							// 			icon="star"
+							// 			defaultRating={climb.stars}
+							// 			maxRating={4}
+							// 			size="small"
+							// 			disabled
+							// 		/>
+							// 	</Table.Cell>
+							// 	<Table.Cell><Header size="medium">{climb.name}</Header></Table.Cell>
+                            //     <Table.Cell>{climb.desc}</Table.Cell>
+                            // </Table.Row>
+                            <ClimbInfo climb={climb}/>
 						))}
 					</Table.Body>
 				</Table>

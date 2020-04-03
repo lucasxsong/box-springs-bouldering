@@ -11,12 +11,14 @@
 			{
 				"name": "Speed Bump Traverse",
 				"grade": 1,
-				"stars": 2
+                "stars": 2,
+                "desc": "start left and go up"
 			},
 			{
 				"name": "Speed Bumps",
 				"grade": 1,
-				"stars": 2
+                "stars": 2,
+                "desc": "start left and go up"
 			}
 		]
 	},
@@ -32,22 +34,28 @@
 			{
 				"name": "Speed Bump Traverse",
 				"grade": 1,
-				"stars": 2
+                "stars": 2,
+                "desc": "start left and go up this is a climb with many cool features and different edges topout is scary"
 			},
 			{
 				"name": "Speed Bumps",
 				"grade": 1,
-				"stars": 2
+                "stars": 3,
+                "desc": "start left and go up"
+                
 			},
 			{
 				"name": "Speed Bump Traverse",
 				"grade": 4,
-				"stars": 2
+                "stars": 0,
+                "desc": "start left and go up"
+                
 			},
 			{
 				"name": "Speed Bumps",
 				"grade": 8,
-				"stars": 2
+                "stars": 4,
+                "desc": "start left and go up"
 			}
 		]
 	}
