@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/box-springs-bouldering/precache-manifest.24e715b60537f794f6bb6a5e127f9326.js"
+  "/box-springs-bouldering/precache-manifest.fb22cea4047f35e9abc4b3ee5f1fb3a1.js"
 );
 
 self.addEventListener('message', (event) => {
