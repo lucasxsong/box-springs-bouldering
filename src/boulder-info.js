@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import styled from 'styled-components';
 import { Card, Image } from 'semantic-ui-react';
 import './App.css';
 import BoulderModal from './boulder-modal';
@@ -10,7 +9,6 @@ export default class BoulderInfo extends PureComponent {
 	};
 
 	_openModal = () => {
-		console.log('clickced');
 		this.setState({ showModal: this.info });
 	};
 
@@ -22,7 +20,7 @@ export default class BoulderInfo extends PureComponent {
 			<>
 				<Card>
 					<Image
-						src="https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+						src={info.image}
 						wrapped
 						ui={false}
 					/>

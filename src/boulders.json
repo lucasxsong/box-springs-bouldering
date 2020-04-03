@@ -2,7 +2,8 @@
 	{
 		"boulder": "Speed Bump Boulder",
 		"population": "8,175,133",
-		"image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg",
+        "image": "/img/speedbump.jpg",
+        "desc": "The Speed Bump boulder is a little hard to find, requiring a scramble into a hidden nook. Landing is great, but slopes towards a small ledge.",
 		"area": "Crow's Nest Area",
 		"latitude": 33.991351,
 		"longitude": -117.306592,
@@ -12,20 +13,26 @@
 				"name": "Speed Bump Traverse",
 				"grade": 1,
                 "stars": 2,
-                "desc": "start left and go up"
+                "desc": "start left and go up",
+                "height": 15,
+                "fa":"L. Song"
 			},
 			{
 				"name": "Speed Bumps",
 				"grade": 1,
                 "stars": 2,
-                "desc": "start left and go up"
+                "desc": "start left and go up",
+                "height": 15,
+                "fa":"L. Song"
+                
 			}
 		]
 	},
 	{
 		"boulder": "Big Bass Boulder",
 		"population": "8,175,133",
-		"image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg",
+        "image": "/img/bigbass.jpg",
+        "desc": "The Speed Bump boulder is a little hard to find, requiring a scramble into a hidden nook. Landing is great, but slopes towards a small ledge.",
 		"area": "Crow's Nest Area",
 		"latitude": 33.991019,
 		"longitude": -117.306679,
@@ -35,27 +42,35 @@
 				"name": "Speed Bump Traverse",
 				"grade": 1,
                 "stars": 2,
-                "desc": "start left and go up this is a climb with many cool features and different edges topout is scary"
+                "desc": "start left and go up this is a climb with many cool features and different edges topout is scary",
+                "height": 15,
+                "fa":"L. Song"
 			},
 			{
 				"name": "Speed Bumps",
 				"grade": 1,
                 "stars": 3,
-                "desc": "start left and go up"
+                "desc": "start left and go up",
+                "height": 15,
+                "fa":"L. Song"
                 
 			},
 			{
 				"name": "Speed Bump Traverse",
 				"grade": 4,
                 "stars": 0,
-                "desc": "start left and go up"
+                "desc": "start left and go up",
+                "height": 15,
+                "fa":"L. Song"
                 
 			},
 			{
 				"name": "Speed Bumps",
 				"grade": 8,
                 "stars": 4,
-                "desc": "start left and go up"
+                "desc": "start left and go up",
+                "height": 15,
+                "fa":"L. Song"
 			}
 		]
 	}

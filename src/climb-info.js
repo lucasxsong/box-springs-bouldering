@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
-import { Accordion, Table, Rating, Label, Header } from 'semantic-ui-react';
+import {
+	Accordion,
+	Table,
+	Rating,
+	Label,
+	Header,
+    Grid,
+    Image
+} from 'semantic-ui-react';
 
 const colors = [
-    'green',
-    'green',
-    'blue',
-    'blue',
-    'red',
-    'red',
-    'brown',
-    'brown',
-    'black',
-    'black',
+	'green',
+	'green',
+	'blue',
+	'blue',
+	'red',
+	'red',
+	'brown',
+	'brown',
+	'black',
+	'black',
 ];
 
 export default class ClimbInfo extends Component {
@@ -23,18 +31,14 @@ export default class ClimbInfo extends Component {
 		const newIndex = activeIndex === index ? -1 : index;
 
 		this.setState({ activeIndex: newIndex });
-    };
+	};
 
 	render() {
 		const { activeIndex } = this.state;
-        const {climb} = this.props;
+		const { climb } = this.props;
 		return (
 			<Accordion fluid styled>
-				<Accordion.Title
-					active={0}
-					index={0}
-					onClick={this.handleClick}
-				>
+				<Accordion.Title active={0} index={0} onClick={this.handleClick}>
 					<Table.Row>
 						<Table.Cell>
 							<Label color={colors[climb.grade]} ribbon>
@@ -53,15 +57,18 @@ export default class ClimbInfo extends Component {
 						<Table.Cell>
 							<Header size="medium">{climb.name}</Header>
 						</Table.Cell>
-						<Table.Cell>{climb.desc}</Table.Cell>
+						<Table.Cell>{climb.height}ft</Table.Cell>
 					</Table.Row>
 				</Accordion.Title>
 				<Accordion.Content active={activeIndex === 0}>
-					<p>
-						A dog is a type of domesticated animal. Known for its loyalty and
-						faithfulness, it can be found as a welcome guest in many households
-						across the world.
-					</p>
+					<Grid columns={3}>
+						<Grid.Row>
+							<Grid.Column width={4}>
+								<Label>FA: {climb.fa}</Label>
+							</Grid.Column>
+							<Grid.Column width={10}>{climb.desc}</Grid.Column>
+						</Grid.Row>
+					</Grid>
 				</Accordion.Content>
 			</Accordion>
 		);
