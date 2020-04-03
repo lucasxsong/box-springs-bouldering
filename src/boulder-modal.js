@@ -13,7 +13,7 @@ import {
 
 // this.labelColor = {};
 
-const colors = ['green', 'green', 'blue', 'blue', 'red', 'red', 'black', 'black;']
+const colors = ['green', 'green', 'blue', 'blue', 'red', 'red', 'brown', 'brown', 'black', 'black']
 
 const BoulderModal = props => (
 	<Modal closeIcon trigger={<Button>View Climbs</Button>}>
