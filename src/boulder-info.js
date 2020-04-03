@@ -20,7 +20,7 @@ export default class BoulderInfo extends PureComponent {
 			<>
 				<Card>
 					<Image
-                        src={info.image}
+                        src={`${process.env.PUBLIC_URL} ${info.image}`}
                         className='boulder-image'
 					/>
 					<Card.Content>
