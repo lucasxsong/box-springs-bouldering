@@ -2,8 +2,6 @@ import React, { PureComponent } from 'react';
 import { Marker } from 'react-map-gl';
 import './App.css';
 
-const SIZE = 40;
-
 // Important for perf: the markers never change, avoid rerender when the map viewport changes
 export default class Pins extends PureComponent {
 	_renderName = (boulder) => {

@@ -6,8 +6,6 @@ import {
 	Label,
 	Header,
 	Grid,
-	Image,
-	Transition,
 } from 'semantic-ui-react';
 
 const colors = [

@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import {
-	Accordion,
 	Table,
 	Rating,
 	Label,
 	Header,
-	Grid,
-	Image,
-	Transition,
 } from 'semantic-ui-react';
 
 const colors = [
@@ -26,10 +22,8 @@ const colors = [
 ];
 
 export default class ClimbPreview extends Component {
-	state = { activeIndex: null };
 
 	render() {
-		const { activeIndex } = this.state;
 		const { climb } = this.props;
 		return (
 			<Table.Row>
