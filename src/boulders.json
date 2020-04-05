@@ -127,7 +127,8 @@
 			{
 				"name": "Crimson Tide",
 				"grade": 4,
-				"stars": 4,
+                "stars": 4,
+                "video": "https://www.youtube.com/watch?v=j1u1D6FywNU",
 				"desc": "Start with a sharktooth undercling and right facing shelf. Power up into a tricky mantle and a heady slab. Be careful, crimp flake on the left is flexing.",
 				"height": 32,
 				"fa": "L. Song"

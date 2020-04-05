@@ -6,7 +6,10 @@ import {
 	Label,
 	Header,
 	Grid,
+	Embed,
+	Icon,
 } from 'semantic-ui-react';
+import './App.css';
 
 const colors = [
 	'green',
@@ -24,14 +27,22 @@ const colors = [
 ];
 
 export default class ClimbInfo extends Component {
-	state = { activeIndex: null };
+	state = { activeIndex: null, showVideo: false };
 
 	handleClick = (e, titleProps) => {
 		const { index } = titleProps;
 		const { activeIndex } = this.state;
 		const newIndex = activeIndex === index ? -1 : index;
-        
-        this.setState({ activeIndex: newIndex });
+
+		this.setState({ activeIndex: newIndex });
+	};
+
+	showVideo = () => {
+		this.setState((prevState) => ({ showVideo: !prevState.showVideo }));
+	};
+
+	returnId = (video) => {
+		return video.split('v=')[1];
 	};
 
 	render() {
@@ -62,16 +73,31 @@ export default class ClimbInfo extends Component {
 					</Table.Row>
 				</Accordion.Title>
 				<Accordion.Content active={activeIndex === 0}>
-					{/* <Transition visible={activeIndex} duration={500}> */}
-						<Grid columns={3}>
-							<Grid.Row>
-								<Grid.Column width={5}>
-									<Label>{climb.fa}</Label>
-								</Grid.Column>
-								<Grid.Column width={10}>{climb.desc}</Grid.Column>
-							</Grid.Row>
-						</Grid>
-					{/* </Transition> */}
+					<Grid>
+						<Grid.Row columns={4}>
+							<Grid.Column width={5}>
+								<Label>{climb.fa}</Label>
+								<div>
+									{climb.video && (
+										<Icon
+											size="large"
+											name="youtube"
+											className="youtube-icon"
+											onClick={this.showVideo}
+										/>
+									)}
+								</div>
+							</Grid.Column>
+							<Grid.Column width={10}>{climb.desc}</Grid.Column>
+						</Grid.Row>
+						<Grid.Row textAlign="right" columns={1}>
+							<Grid.Column width={15}>
+								{this.state.showVideo && (
+									<Embed id={this.returnId(climb.video)} source="youtube" active/>
+								)}
+							</Grid.Column>
+						</Grid.Row>
+					</Grid>
 				</Accordion.Content>
 			</Accordion>
 		);
