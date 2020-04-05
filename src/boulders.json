@@ -9,8 +9,8 @@
 		"climbs": [
 			{
 				"name": "Speed Bump Traverse",
-                "grade": 0,
-                "video": "https://www.youtube.com/watch?v=GXBZ3UlJqEY",
+				"grade": 0,
+				"video": "https://www.youtube.com/watch?v=GXBZ3UlJqEY",
 				"stars": 2,
 				"desc": "Start as far left as you can. A fun and balancey traverse over bumps towards the twin cracks. Can be reversed as well. ~30 feet long.",
 				"height": 5,
@@ -19,15 +19,15 @@
 			{
 				"name": "Slow Down",
 				"grade": 0,
-                "stars": 1,
-                "video": "https://www.youtube.com/watch?v=Bf9fs8GsvJM",
+				"stars": 1,
+				"video": "https://www.youtube.com/watch?v=Bf9fs8GsvJM",
 				"desc": "Start on large flakes on the left side the boulder. Continue up on chossy jugs to an easy mantle.",
 				"height": 12,
 				"fa": "L. Song"
 			},
 			{
-                "name": "Speed Humps",
-                "video": "https://www.youtube.com/watch?v=IdqvBfISjaY",
+				"name": "Speed Humps",
+				"video": "https://www.youtube.com/watch?v=IdqvBfISjaY",
 				"grade": 1,
 				"stars": 2,
 				"desc": "Start standing on the black bump near the middle of the boulder. Follow gritty dishes up the boulder.",
@@ -51,8 +51,8 @@
 				"fa": "L. Song"
 			},
 			{
-                "name": "Speed Hands",
-                "video": "https://www.youtube.com/watch?v=GXBZ3UlJqEY",
+				"name": "Speed Hands",
+				"video": "https://www.youtube.com/watch?v=GXBZ3UlJqEY",
 				"grade": 0,
 				"stars": 2,
 				"desc": "Deep hands up a juggy crack.",
@@ -72,8 +72,8 @@
 			{
 				"name": "20 Pound Line",
 				"grade": 1,
-                "stars": 1,
-                "video": "https://www.youtube.com/watch?v=hyFWH1PQzFA",
+				"stars": 1,
+				"video": "https://www.youtube.com/watch?v=hyFWH1PQzFA",
 				"desc": "Start's at same undercling as Jonah's Traverse. Top out directly upon red slopers. Short problem.",
 				"height": 10,
 				"fa": "L. Song"
@@ -81,17 +81,17 @@
 			{
 				"name": "Jonah's Traverse",
 				"grade": 1,
-                "stars": 1,
-                "video":"https://www.youtube.com/watch?v=XZ9QvlMHvYg",
+				"stars": 1,
+				"video": "https://www.youtube.com/watch?v=XZ9QvlMHvYg",
 				"desc": "Start at the right facing undercling with pocketed feet. Traverse right following the horizontal crack and topout right of the \"fin\"",
 				"height": 10,
 				"fa": "L. Song"
 			},
 			{
-                "name": "Up The Gills",
+				"name": "Up The Gills",
 				"grade": 0,
-                "stars": 1,
-                "video": "https://www.youtube.com/watch?v=9laNeLNA0Pc",
+				"stars": 1,
+				"video": "https://www.youtube.com/watch?v=9laNeLNA0Pc",
 				"desc": "Start at the same undercling as Jonah's Traverse. Move right and up the juggy right leaning crack.",
 				"height": 10,
 				"fa": "L. Song"
@@ -99,8 +99,8 @@
 			{
 				"name": "Fintastic",
 				"grade": 1,
-                "stars": 2,
-                "video": "https://www.youtube.com/watch?v=4-JTinu1QBw",
+				"stars": 2,
+				"video": "https://www.youtube.com/watch?v=4-JTinu1QBw",
 				"desc": "Start at the right facing undercling with big pockets for feet. Move right towards the horizontal crack and shoot up the \"fin\". Similar to Jonah's Traverse.",
 				"height": 12,
 				"fa": "L. Song"
@@ -108,8 +108,8 @@
 			{
 				"name": "Tall Tails",
 				"grade": 0,
-                "stars": 0,
-                "video": "https://www.youtube.com/watch?v=bdLYQVLbapQ",
+				"stars": 0,
+				"video": "https://www.youtube.com/watch?v=bdLYQVLbapQ",
 				"desc": "Start on the right arete. Follow sandy slopers up to an easy mantle.",
 				"height": 10,
 				"fa": "L. Song"
@@ -127,8 +127,8 @@
 			{
 				"name": "Crimson Tide",
 				"grade": 4,
-                "stars": 4,
-                "video": "https://www.youtube.com/watch?v=j1u1D6FywNU",
+				"stars": 4,
+				"video": "https://www.youtube.com/watch?v=j1u1D6FywNU",
 				"desc": "Start with a sharktooth undercling and right facing shelf. Power up into a tricky mantle and a heady slab. Be careful, crimp flake on the left is flexing.",
 				"height": 32,
 				"fa": "L. Song"
@@ -154,8 +154,8 @@
 			{
 				"name": "Perry",
 				"grade": 3,
-                "stars": 3,
-                "video":"https://www.youtube.com/watch?v=nkG5pKM6yy8",
+				"stars": 3,
+				"video": "https://www.youtube.com/watch?v=nkG5pKM6yy8",
 				"desc": "Start on a large under cling. Move to the left up the large flake and onto small crimps.",
 				"height": 20,
 				"fa": "L. Song"
@@ -163,8 +163,8 @@
 			{
 				"name": "The Platypus",
 				"grade": 2,
-                "stars": 2,
-                "video": "https://www.youtube.com/watch?v=Gmgzm-PX5Nk",
+				"stars": 2,
+				"video": "https://www.youtube.com/watch?v=Gmgzm-PX5Nk",
 				"desc": "Sit start on a jug shelf on the far left side of the boulder. Traverse right and finish on the same crimps as Perry.",
 				"height": 20,
 				"fa": "L. Song"
@@ -172,8 +172,8 @@
 			{
 				"name": "Platypus Direct",
 				"grade": 1,
-                "stars": 2,
-                "video":"https://www.youtube.com/watch?v=pzxhLg-ll54",
+				"stars": 2,
+				"video": "https://www.youtube.com/watch?v=pzxhLg-ll54",
 				"desc": "Sit start on a jug shelf on the far left side of the boulder. Traverse right, but before hitting the large flake, pull up to solid crimps.",
 				"height": 17,
 				"fa": "L. Song"
@@ -225,9 +225,9 @@
 			{
 				"name": "Stanley Yelnats",
 				"grade": 2,
-                "stars": 3,
-                "video":"https://www.youtube.com/watch?v=_-3tF3HZwN0",
-                "desc": "The obvious line of pockets trending up and left.",
+				"stars": 3,
+				"video": "https://www.youtube.com/watch?v=_-3tF3HZwN0",
+				"desc": "The obvious line of pockets trending up and left.",
 				"height": 12,
 				"fa": "L. Song"
 			},
