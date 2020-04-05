@@ -5,8 +5,8 @@ import {
 	Rating,
 	Label,
 	Header,
-    Grid,
-    Image
+	Grid,
+	Image,
 } from 'semantic-ui-react';
 
 const colors = [
@@ -40,12 +40,12 @@ export default class ClimbInfo extends Component {
 			<Accordion fluid styled>
 				<Accordion.Title active={0} index={0} onClick={this.handleClick}>
 					<Table.Row>
-						<Table.Cell>
+						<Table.Cell width={2}>
 							<Label color={colors[climb.grade]} ribbon>
 								<b>V{climb.grade}</b>
 							</Label>
 						</Table.Cell>
-						<Table.Cell>
+						<Table.Cell width={4}>
 							<Rating
 								icon="star"
 								defaultRating={climb.stars}
@@ -54,10 +54,10 @@ export default class ClimbInfo extends Component {
 								disabled
 							/>
 						</Table.Cell>
-						<Table.Cell>
+						<Table.Cell width={10}>
 							<Header size="medium">{climb.name}</Header>
 						</Table.Cell>
-						<Table.Cell>{climb.height}ft</Table.Cell>
+						<Table.Cell width={4}>{climb.height}ft</Table.Cell>
 					</Table.Row>
 				</Accordion.Title>
 				<Accordion.Content active={activeIndex === 0}>

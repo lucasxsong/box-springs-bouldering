@@ -18,7 +18,7 @@ const BoulderModal = (props) => (
 			<Grid stackable columns={2}>
 				<Grid.Row>
 					<Grid.Column>
-						<Sticky>
+						<Sticky offset={20}>
 							<div className="sticky-wrapper">
 								<Header
 									as="h2"
@@ -27,7 +27,7 @@ const BoulderModal = (props) => (
 								>
 									{props.info.boulder}
 								</Header>
-								<Image rounded size="boulder-image" src={props.info.image} />
+								<Image rounded src={props.info.image} />
 							</div>
 						</Sticky>
 					</Grid.Column>

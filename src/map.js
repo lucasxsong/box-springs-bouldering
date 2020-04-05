@@ -3,7 +3,7 @@ import MapGL, { Popup, GeolocateControl } from 'react-map-gl';
 import './App.css';
 
 import CityInfo from './boulder-info';
-import BOULDERS from './boulders.json'
+import BOULDERS from './boulders.json';
 import Pins from './pins';
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_KEY; // Set your mapbox token here
@@ -15,59 +15,45 @@ export default class Map extends Component {
 			longitude: -117.3,
 			zoom: 14,
 			bearing: 0,
-			pitch: 0
-        }, 
-        popupInfo: null
+			pitch: 0,
+		},
+		popupInfo: null,
 	};
 
 	_sourceRef = React.createRef();
 
-	_onViewportChange = viewport => this.setState({ viewport });
+	_onViewportChange = (viewport) => this.setState({ viewport });
 
-	_onClick = event => {
-		const feature = event.features[0];
-		const clusterId = feature.properties.cluster_id;
+	_onClick = (event) => {
+		console.log(event);
+		this.setState({ popupInfo: null });
+	};
 
-		const mapboxSource = this._sourceRef.current.getSource();
+	_onClickMarker = (boulder) => {
+		this.setState({ popupInfo: boulder });
+	};
 
-		mapboxSource.getClusterExpansionZoom(clusterId, (err, zoom) => {
-			if (err) {
-				return;
-			}
+	_renderPopup() {
+		const { popupInfo } = this.state;
 
-			this._onViewportChange({
-				...this.state.viewport,
-				longitude: feature.geometry.coordinates[0],
-				latitude: feature.geometry.coordinates[1],
-				zoom,
-				transitionDuration: 500
-			});
-		});
-    };
-    
-    _onClickMarker = city => {
-        this.setState({popupInfo: city});
-     };
-
-     _renderPopup() {
-        const {popupInfo} = this.state;
-    
-        return (
-          popupInfo && (
-            <Popup
-            style={{display: 'none !important'}}
-              tipSize={6}
-              anchor="top"
-              longitude={popupInfo.longitude}
-              latitude={popupInfo.latitude}
-              closeOnClick={false}
-              onClose={() => this.setState({popupInfo: null})}
-            >
-              <CityInfo info={popupInfo} />
-            </Popup>
-          )
-        );
-      }
+		return (
+			popupInfo && (
+				<Popup
+					style={{ display: 'none !important' }}
+					tipSize={6}
+					anchor="top"
+					dynamicPosition={true}
+					longitude={popupInfo.longitude}
+					latitude={popupInfo.latitude}
+					closeOnClick={false}
+					captureClick={true}
+					onClose={() => this.setState({ popupInfo: null })}
+				>
+					<CityInfo info={popupInfo} />
+				</Popup>
+			)
+		);
+	}
 
 	render() {
 		const { viewport } = this.state;
@@ -80,10 +66,10 @@ export default class Map extends Component {
 				mapStyle="mapbox://styles/mapbox/satellite-v8"
 				onViewportChange={this._onViewportChange}
 				mapboxApiAccessToken={MAPBOX_TOKEN}
-				onClick={this.on_onClick}
+				onClick={this._onClick}
 			>
-                <Pins data={BOULDERS} onClick={this._onClickMarker} />
-                {this._renderPopup()}
+				<Pins data={BOULDERS} onClick={this._onClickMarker} />
+				{this._renderPopup()}
 
 				<GeolocateControl
 					positionOptions={{ enableHighAccuracy: false }}
