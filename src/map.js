@@ -11,9 +11,9 @@ const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_KEY; // Set your mapbox token 
 export default class Map extends Component {
 	state = {
 		viewport: {
-			latitude: 33.993,
-			longitude: -117.3,
-			zoom: 14,
+			latitude: 33.9915,
+			longitude: -117.3075,
+			zoom: 16,
 			bearing: 0,
 			pitch: 0,
 		},
