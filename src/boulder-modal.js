@@ -19,11 +19,11 @@ const BoulderModal = (props) => (
 				<Grid.Row>
 					<Grid.Column>
 						<Sticky offset={20}>
-							<div className="sticky-wrapper">
+							<div className="boulder-image">
 								<Header
 									as="h2"
 									className="boulder-header"
-									style={{ marginTop: '10px', backgroundColor: '#fffff' }}
+									style={{ backgroundColor: '#fffff' }}
 								>
 									{props.info.boulder}
 								</Header>
@@ -33,11 +33,10 @@ const BoulderModal = (props) => (
 					</Grid.Column>
 					<Grid.Column>
 						<Modal.Description>
-							<Table>
+							<Table basic='very'>
 								<Message>
 									<p>{props.info.desc}</p>
 								</Message>
-
 								<Table.Body>
 									{props.info.climbs.map((climb) => (
 										<ClimbInfo climb={climb} />

@@ -25,7 +25,6 @@ export default class Map extends Component {
 	_onViewportChange = (viewport) => this.setState({ viewport });
 
 	_onClick = (event) => {
-		console.log(event);
 		this.setState({ popupInfo: null });
 	};
 
@@ -41,7 +40,6 @@ export default class Map extends Component {
 				<Popup
 					style={{ display: 'none !important' }}
 					tipSize={6}
-					anchor="top"
 					dynamicPosition={true}
 					longitude={popupInfo.longitude}
 					latitude={popupInfo.latitude}

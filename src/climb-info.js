@@ -7,6 +7,7 @@ import {
 	Header,
 	Grid,
 	Image,
+	Transition,
 } from 'semantic-ui-react';
 
 const colors = [
@@ -20,6 +21,8 @@ const colors = [
 	'brown',
 	'black',
 	'black',
+	'pink',
+	'pink',
 ];
 
 export default class ClimbInfo extends Component {
@@ -29,8 +32,8 @@ export default class ClimbInfo extends Component {
 		const { index } = titleProps;
 		const { activeIndex } = this.state;
 		const newIndex = activeIndex === index ? -1 : index;
-
-		this.setState({ activeIndex: newIndex });
+        
+        this.setState({ activeIndex: newIndex });
 	};
 
 	render() {
@@ -61,14 +64,16 @@ export default class ClimbInfo extends Component {
 					</Table.Row>
 				</Accordion.Title>
 				<Accordion.Content active={activeIndex === 0}>
-					<Grid columns={3}>
-						<Grid.Row>
-							<Grid.Column width={4}>
-								<Label>FA: {climb.fa}</Label>
-							</Grid.Column>
-							<Grid.Column width={10}>{climb.desc}</Grid.Column>
-						</Grid.Row>
-					</Grid>
+					{/* <Transition visible={activeIndex} duration={500}> */}
+						<Grid columns={3}>
+							<Grid.Row>
+								<Grid.Column width={5}>
+									<Label>{climb.fa}</Label>
+								</Grid.Column>
+								<Grid.Column width={10}>{climb.desc}</Grid.Column>
+							</Grid.Row>
+						</Grid>
+					{/* </Transition> */}
 				</Accordion.Content>
 			</Accordion>
 		);
