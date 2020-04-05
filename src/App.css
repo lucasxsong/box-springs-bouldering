@@ -71,14 +71,14 @@
 	cursor: pointer;
 	color: white;
 	background-color: #18435bbf;
-	padding: 10px;
+	padding-top: 12px;
 	font-weight: bold;
 	stroke: solid;
-    border-radius: 5px;
-    /* min-width: 80px;
-    min-height: 80px;
-    max-height: 80px;
-    max-width: 80px; */
+    border-radius: 35px;
+    min-width: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    max-width: 70px;
 }
 .pin-wrapper:hover {
     background-color: #0d3145d6;

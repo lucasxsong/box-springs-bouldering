@@ -20,8 +20,8 @@ export default class Pins extends PureComponent {
 				latitude={city.latitude}
 			>
 				<div className="pin-wrapper" onClick={() => onClick(city)}>
-					{city.climbs.length} climbs
-					<div style={{ fontSize: '10px', fontWeight: 'lighter' }}>
+					{city.climbs.length}
+					<div style={{ fontSize: '9px', fontWeight: 'lighter' }}>
 						{this._renderName(city.boulder)}
 					</div>
 				</div>

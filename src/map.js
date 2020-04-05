@@ -39,7 +39,7 @@ export default class Map extends Component {
 			popupInfo && (
 				<Popup
 					style={{ display: 'none !important' }}
-					tipSize={6}
+					tipSize={0}
 					dynamicPosition={true}
 					longitude={popupInfo.longitude}
 					latitude={popupInfo.latitude}
