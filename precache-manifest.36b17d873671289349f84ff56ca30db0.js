@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8320a617fc6ff17aea701daabcffffe0",
+    "revision": "7c91c54762f8422caef755fba1e89870",
     "url": "/box-springs-bouldering/index.html"
   },
   {
-    "revision": "e16123e861f1c629ca9f",
-    "url": "/box-springs-bouldering/static/css/2.1f14bc60.chunk.css"
+    "revision": "4d0a1d84e506055598db",
+    "url": "/box-springs-bouldering/static/css/2.0599af10.chunk.css"
   },
   {
-    "revision": "28828f0b471b4166b448",
-    "url": "/box-springs-bouldering/static/css/main.ffd98c7c.chunk.css"
+    "revision": "367de3b7091be06f1546",
+    "url": "/box-springs-bouldering/static/css/main.a71bb2f1.chunk.css"
   },
   {
-    "revision": "e16123e861f1c629ca9f",
-    "url": "/box-springs-bouldering/static/js/2.6062cb73.chunk.js"
+    "revision": "4d0a1d84e506055598db",
+    "url": "/box-springs-bouldering/static/js/2.1156c5cb.chunk.js"
   },
   {
     "revision": "3523e4cff3dec7be56dd2b959fadaa1a",
-    "url": "/box-springs-bouldering/static/js/2.6062cb73.chunk.js.LICENSE.txt"
+    "url": "/box-springs-bouldering/static/js/2.1156c5cb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28828f0b471b4166b448",
-    "url": "/box-springs-bouldering/static/js/main.1e933168.chunk.js"
+    "revision": "367de3b7091be06f1546",
+    "url": "/box-springs-bouldering/static/js/main.ae6b04c8.chunk.js"
   },
   {
     "revision": "226dac96f06594362efd",

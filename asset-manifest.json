@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/box-springs-bouldering/static/css/main.ffd98c7c.chunk.css",
-    "main.js": "/box-springs-bouldering/static/js/main.1e933168.chunk.js",
-    "main.js.map": "/box-springs-bouldering/static/js/main.1e933168.chunk.js.map",
+    "main.css": "/box-springs-bouldering/static/css/main.a71bb2f1.chunk.css",
+    "main.js": "/box-springs-bouldering/static/js/main.ae6b04c8.chunk.js",
+    "main.js.map": "/box-springs-bouldering/static/js/main.ae6b04c8.chunk.js.map",
     "runtime-main.js": "/box-springs-bouldering/static/js/runtime-main.d46d28f3.js",
     "runtime-main.js.map": "/box-springs-bouldering/static/js/runtime-main.d46d28f3.js.map",
-    "static/css/2.1f14bc60.chunk.css": "/box-springs-bouldering/static/css/2.1f14bc60.chunk.css",
-    "static/js/2.6062cb73.chunk.js": "/box-springs-bouldering/static/js/2.6062cb73.chunk.js",
-    "static/js/2.6062cb73.chunk.js.map": "/box-springs-bouldering/static/js/2.6062cb73.chunk.js.map",
+    "static/css/2.0599af10.chunk.css": "/box-springs-bouldering/static/css/2.0599af10.chunk.css",
+    "static/js/2.1156c5cb.chunk.js": "/box-springs-bouldering/static/js/2.1156c5cb.chunk.js",
+    "static/js/2.1156c5cb.chunk.js.map": "/box-springs-bouldering/static/js/2.1156c5cb.chunk.js.map",
     "index.html": "/box-springs-bouldering/index.html",
-    "precache-manifest.bbb81b0e7343e3582fcb9471fccd385c.js": "/box-springs-bouldering/precache-manifest.bbb81b0e7343e3582fcb9471fccd385c.js",
+    "precache-manifest.36b17d873671289349f84ff56ca30db0.js": "/box-springs-bouldering/precache-manifest.36b17d873671289349f84ff56ca30db0.js",
     "service-worker.js": "/box-springs-bouldering/service-worker.js",
-    "static/css/2.1f14bc60.chunk.css.map": "/box-springs-bouldering/static/css/2.1f14bc60.chunk.css.map",
-    "static/css/main.ffd98c7c.chunk.css.map": "/box-springs-bouldering/static/css/main.ffd98c7c.chunk.css.map",
-    "static/js/2.6062cb73.chunk.js.LICENSE.txt": "/box-springs-bouldering/static/js/2.6062cb73.chunk.js.LICENSE.txt",
+    "static/css/2.0599af10.chunk.css.map": "/box-springs-bouldering/static/css/2.0599af10.chunk.css.map",
+    "static/css/main.a71bb2f1.chunk.css.map": "/box-springs-bouldering/static/css/main.a71bb2f1.chunk.css.map",
+    "static/js/2.1156c5cb.chunk.js.LICENSE.txt": "/box-springs-bouldering/static/js/2.1156c5cb.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/box-springs-bouldering/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.d46d28f3.js",
-    "static/css/2.1f14bc60.chunk.css",
-    "static/js/2.6062cb73.chunk.js",
-    "static/css/main.ffd98c7c.chunk.css",
-    "static/js/main.1e933168.chunk.js"
+    "static/css/2.0599af10.chunk.css",
+    "static/js/2.1156c5cb.chunk.js",
+    "static/css/main.a71bb2f1.chunk.css",
+    "static/js/main.ae6b04c8.chunk.js"
   ]
 }
